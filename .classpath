@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-aop-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-aspects-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-beans-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-context-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-context-support-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-core-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-expression-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-instrument-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-instrument-tomcat-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-jdbc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-jms-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-messaging-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-orm-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-oxm-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-test-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-tx-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-web-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-webmvc-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-webmvc-portlet-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Spring Libraries/spring-websocket-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
