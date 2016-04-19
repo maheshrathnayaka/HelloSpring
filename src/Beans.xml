@@ -1,15 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="helloWorld" class="com.spring.core.HelloWorld" scope="prototype">
-       <property name="message" value="Hello World!"/>
-   </bean>
-   <bean id="anotherHello" class="com.spring.core.AnotherHello">
-		<property name="val1" value="23.6"/>
-		<property name="val2" value="37.2"/>
-   </bean>
+	<!-- This is for bean scopes -->
+	<!-- <bean id="helloWorld" class="com.spring.core.HelloWorld" scope="prototype"> -->
+	<!-- <property name="message" value="Hello World!"/> -->
+	<!-- </bean> -->
+
+	<!-- This is for init method and destroy method -->
+	<!-- <bean id="helloWorld" class="com.spring.core.HelloWorld" init-method="init" 
+		destroy-method="destroy"> -->
+	<!-- <property name="message" value="Hello World!"/> -->
+	<!-- </bean> -->
+
+	<bean id="helloWorld" class="com.spring.core.HelloWorld">
+		<property name="message1" value="Hello World!" />
+		<property name="message2" value="Second Hello World!" />
+	</bean>
+
+	<bean id="helloSL" class="com.spring.core.HelloSL" parent="helloWorld">
+		<property name="message1" value="Hello SL" />
+		<property name="message3" value="Ayubowan SL!" />
+	</bean>
+
+	<bean id="anotherHello" class="com.spring.core.AnotherHello">
+		<property name="val1" value="23.6" />
+		<property name="val2" value="37.2" />
+	</bean>
+	<bean class="com.spring.core.InitHelloWorld" />
+
+	<!-- Definition for textEditor bean using inner bean -->
+	<bean id="textEditor" class="com.spring.core.TextEditor">
+		<property name="spellChecker">
+			<bean id="spellChecker" class="com.spring.core.SpellChecker" />
+		</property>
+	</bean>
+
+	<bean id="javaCollection" class="com.spring.core.JavaCollection">
+		<property name="addressList">
+			<list>
+				<value>Sri Lanka</value>
+				<value>Canada</value>
+				<value>New Zealand</value>
+				<value>Australia</value>
+			</list>
+		</property>
+
+		<property name="addressSet">
+			<set>
+				<value>Sri Lanka</value>
+				<value>Canada</value>
+				<value>New Zealand</value>
+				<value>Australia</value>
+			</set>
+		</property>
+
+		<property name="addressMap">
+			<map>
+				<entry key="1" value="Sri Lanka" />
+				<entry key="2" value="Canada" />
+				<entry key="3" value="New Zealand" />
+				<entry key="4" value="Australia" />
+			</map>
+		</property>
+
+		<property name="addressProp">
+			<props>
+				<prop key="one">Sri Lanka</prop>
+				<prop key="two">Canada</prop>
+				<prop key="three">New Zealand</prop>
+				<prop key="four">Australia</prop>
+			</props>
+		</property>
+	</bean>
 </beans>
